@@ -22,13 +22,16 @@ describe('MemoryStore', function () {
   });
 
   it('should provide the total number of marks', function () {
+    stats.mark('hello world');
     stats.mark('hello universe');
+    stats.store.markTotal('hello world').should.equal(1);
     stats.store.markTotal('hello universe').should.equal(1);
   });
 
   it('should provide the total number of diffs', function () {
-    var end = stats.start('hello universe');
-    end();
+    stats.start('hello world')();
+    stats.start('hello universe')(); //end it
+    stats.store.diffTotal('hello world').should.equal(1);
     stats.store.diffTotal('hello universe').should.equal(1);
   });
 
