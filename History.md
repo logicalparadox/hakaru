@@ -1,4 +1,12 @@
 
+0.1.2 / 2012-02-01 
+==================
+
+  * tests and benches are all compliant with current store
+  * cleaned up memory store
+  * benchmarks use event names
+  * memory store uses event based storage solution
+
 0.1.1 / 2012-02-01 
 ==================
 
