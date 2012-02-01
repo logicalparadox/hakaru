@@ -1,4 +1,18 @@
 
+0.1.0 / 2012-02-01 
+==================
+
+  * benchmark memorystore
+  * added version back in
+  * updated example apps
+  * updated main export
+  * created memory store
+  * added store
+  * added repository
+  * calculations benchmarks
+  * tests for calculations
+  * moving calc to separate file
+
 0.0.2 / 2012-01-31 
 ==================
 

@@ -1,7 +1,7 @@
 {
   "author": "Jake Luer <jake@alogicalparadox.com> (http://alogicalparadox.com)",
   "name": "hakaru",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/logicalparadox/hakaru.git"
