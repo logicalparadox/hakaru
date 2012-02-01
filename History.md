@@ -1,4 +1,9 @@
 
+0.1.3 / 2012-02-01 
+==================
+
+  * added debug module, plus debug events at hakaru:repo & hakaru:MemoryStore
+
 0.1.2 / 2012-02-01 
 ==================
 
