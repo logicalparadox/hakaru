@@ -19,7 +19,7 @@ http.createServer(function(req, res) {
 }).listen(4126, iterate);
 
 setInterval(function () {
-  console.log('Total: ', stats.store.totalMarks('request'));
+  console.log('Total: ', stats.store.markTotal('request'));
   console.log('Reqs/s: ', stats.store.markAvg('request'));
   console.log();
 }, 1000);

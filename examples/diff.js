@@ -23,7 +23,7 @@ http.createServer(function(req, res) {
 }).listen(4126, iterate);
 
 setInterval(function () {
-  console.log('Total: ', stats.store.totalDiffs('response'));
+  console.log('Total: ', stats.store.diffTotal('response'));
   console.log('Avg Resp:  ', stats.store.diffAvg('response'));
   console.log();
 }, 1000);

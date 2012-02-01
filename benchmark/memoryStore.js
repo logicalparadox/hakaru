@@ -13,11 +13,11 @@ suite('MemoryStore', function () {
   });
 
   bench('totalMarks', function () {
-    total = stats.store.totalMarks('bench');
+    total = stats.store.markTotal('bench');
   });
 
   bench('totalDiffs', function () {
-    total = stats.store.totalDiffs('bench');
+    total = stats.store.diffTotal('bench');
   });
 
   bench('markAvg', function () {
