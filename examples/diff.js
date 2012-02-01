@@ -1,10 +1,10 @@
 var hakaru = require('..')
-  , stats = hakaru.count('response');
+  , stats = hakaru();
 
 var http = require('http');
 
 function iterate() {
-  var end = stats.start();
+  var end = stats.start('response');
   http.get({ port: 4126 }, function (res) {
     res.on('end', function () {
       end();
@@ -23,7 +23,7 @@ http.createServer(function(req, res) {
 }).listen(4126, iterate);
 
 setInterval(function () {
-  console.log('Avg Resp:  ', stats.avgdiff());
-  console.log('Deviation: ', stats.diffdeviation());
+  console.log('Total: ', stats.store.totalDiffs('response'));
+  console.log('Avg Resp:  ', stats.store.diffAvg('response'));
   console.log();
 }, 1000);

@@ -1,5 +1,5 @@
 var hakaru = require('..')
-  , stats = hakaru.count('requests');
+  , stats = hakaru();
 
 var http = require('http');
 
@@ -12,15 +12,14 @@ function iterate () {
 }
 
 http.createServer(function(req, res) {
-  stats.mark();
+  stats.mark('request');
   res.writeHead(200, { 'content-type': 'text/plain' });
   res.write('Hello Universe');
   res.end();
 }).listen(4126, iterate);
 
 setInterval(function () {
-  console.log('Total: ', stats.total());
-  console.log('Reqs/s: ', stats.fequency());
-  console.log('Deviation: ', stats.deviation());
+  console.log('Total: ', stats.store.totalMarks('request'));
+  console.log('Reqs/s: ', stats.store.markAvg('request'));
   console.log();
 }, 1000);
