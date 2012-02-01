@@ -1,0 +1,23 @@
+{
+  "author": "Jake Luer <jake@alogicalparadox.com> (http://alogicalparadox.com)",
+  "name": "hakaru",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/logicalparadox/hakaru.git"
+  },
+  "main": "./index",
+  "scripts": {
+    "test": "make test"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "matcha": "*"
+  }
+}
