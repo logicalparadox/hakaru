@@ -1,4 +1,9 @@
 
+0.1.4 / 2012-02-01 
+==================
+
+  * [bug] shared template causing all events to use same store
+
 0.1.3 / 2012-02-01 
 ==================
 
