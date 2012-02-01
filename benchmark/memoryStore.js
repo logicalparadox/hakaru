@@ -4,28 +4,28 @@ var hakaru = require('..')
 suite('MemoryStore', function () {
 
   bench('mark', function () {
-    stats.mark();
+    stats.mark('bench');
   });
 
   bench('diff', function () {
-    end = stats.start();
+    end = stats.start('bench');
     end();
   });
 
   bench('totalMarks', function () {
-    total = stats.store.totalMarks();
+    total = stats.store.totalMarks('bench');
   });
 
   bench('totalDiffs', function () {
-    total = stats.store.totalDiffs();
+    total = stats.store.totalDiffs('bench');
   });
 
   bench('markAvg', function () {
-    avg = stats.store.markAvg();
+    avg = stats.store.markAvg('bench');
   });
 
   bench('diffAvg', function () {
-    avg = stats.store.diffAvg();
+    avg = stats.store.diffAvg('bench');
   });
 
 });
