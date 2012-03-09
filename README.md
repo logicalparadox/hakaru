@@ -4,7 +4,7 @@
 
 Basically, this tiny module allows you to count either marks or differences between the start time 
 and end time of an action. If it does become signifantly useful for something I will develop into 
-a full module. Right now, publsihed simply for educational purposes.
+a full module. Right now, published simply for educational purposes.
 
 ## Usage
 
