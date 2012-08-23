@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/logicalparadox/hakaru.png)](http://travis-ci.org/logicalparadox/hakaru)
 # Hakaru
 
 > Japanese: to measure, weight, or gauge.
